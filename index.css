@@ -1,0 +1,33 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+body{
+    font-family: "Open Sans",
+        sans-serif;
+    color: hsl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.875rem;
+    background-color: hsl(210, 36%, 96%);
+}
+
+.nav{
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_pages{
+        display: flex;
+        flex-direction: row;
+}
+
+.nav_icons{
+    display: flex;
+    flex-direction: row;
+}
