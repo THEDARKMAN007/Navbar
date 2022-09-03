@@ -12,7 +12,13 @@ body{
     font-size: 0.875rem;
     background-color: hsl(210, 36%, 96%);
 }
-
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* gap: 20px; */
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 .nav{
     background-color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -20,14 +26,71 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.coding_addict img{
+    height: 2.5em;
+    width: 11em;
 }
 
 .nav_pages{
-        display: flex;
-        flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2em;
+    letter-spacing: 0.2em;
 }
 
 .nav_icons{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    color: black;
+}
+
+.nav_icons a,.nav_icons a:focus,.nav_icons a:active,.nav_icons a:visited{
+    color: #49a6e9;
+    text-decoration: none;
+}
+
+.nav_icons a:hover, .nav_pages a:hover{
+    color: skyblue;
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.nav_pages a, .nav_pages a:active,.nav_pages a:focus,.nav_pages a:visited{
+    text-decoration: none;
+    color: hsl(209, 61%, 16%);
+}
+
+div .fa-list{
+    color: #49a6e9;
+    font-size: 1.5em;
+    /* padding: 15px; */
+}
+div .fa-list:hover {
+    color: black;
+    transition: 0.4s;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+    
+.pages a,.pages:active,.pages:focus,.pages:visited{
+    text-decoration: none;
+}
+.pages:hover{
+    background-color: skyblue; 
+}
+
+.pages{
+    padding: 0.4em;
+    padding-left: 0.8em;
 }
